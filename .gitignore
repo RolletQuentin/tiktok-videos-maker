@@ -1,0 +1,7 @@
+.vscode
+env
+reddit_scraping
+stories
+minecraft_video.mp4
+
+*/__pycache__
