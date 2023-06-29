@@ -28,10 +28,14 @@ python3 main.py --title "Title example" --description "The content of the video"
 
 This command will create a new directory, called `stories`, where all the videos will be saved. In this directory, you can find folders `story_XX`. In these folders, you can find the auto-generated videos in three languages (english, french and spannish).
 
+## Web UI
+
+You can now use the bot with a beautiful UI ! Please make sure that you start the API before make a request.
+
 ## Features
 - [x] Create videos for TikTok
 - [x] Make an API
 - [ ] You can choose the languages
-- [ ] Web User Interface
+- [x] Web User Interface
 - [ ] Generate images with Stable Diffusion to make beautiful videos
 
