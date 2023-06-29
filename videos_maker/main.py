@@ -1,9 +1,9 @@
 import os
 import argparse
-from create_audio import create_audio
-from create_folder import create_story_folder
-from create_video import create_synced_videos
-from create_text import create_text_file
+from videos_maker.create_audio import create_audio
+from videos_maker.create_folder import create_story_folder
+from videos_maker.create_video import create_synced_videos
+from videos_maker.create_text import create_text_file
 
 SUPPORTED_LANGUAGES = ["en", "fr", "es"]
 
