@@ -1,4 +1,5 @@
 from gtts import gTTS
+from deep_translator import GoogleTranslator
 import os
 
 
@@ -12,5 +13,7 @@ def create_audio(title, folder_path, supported_languages):
         text_speech = gTTS(text, lang=language)
         text_speech.save(f"{folder_path}/{language}_text.wav")
 
-        title_speech = gTTS(title, lang=language)
+        translated_title = GoogleTranslator(
+            source='auto', target=language).translate(text)
+        title_speech = gTTS(translated_title, lang=language)
         title_speech.save(f"{folder_path}/{language}_title.wav")
